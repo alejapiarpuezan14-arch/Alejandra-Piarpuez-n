@@ -1,0 +1,266 @@
+:root {
+  --morado: #24152F;
+  --violeta: #8B5CF6;
+  --lavanda: #D8C5FF;
+  --blanco: #F8F5FC;
+}
+
+/* ===== General ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--morado);
+  background-color: var(--blanco);
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.centrado {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ===== Encabezado ===== */
+.encabezado {
+  background-color: var(--morado);
+  color: var(--blanco);
+  padding: 15px 0;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.menu a {
+  color: var(--blanco);
+  font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: var(--lavanda);
+}
+
+/* ===== Filas y columnas ===== */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.columna {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* ===== Portada ===== */
+.portada {
+  background-color: var(--morado);
+  color: var(--blanco);
+  padding: 70px 0;
+}
+
+.etiqueta {
+  color: var(--lavanda);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.portada h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.portada h1 span {
+  color: var(--violeta);
+  display: block;
+}
+
+.imagen-portada {
+  display: block;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* ===== Botones ===== */
+.boton {
+  display: inline-block;
+  background-color: var(--violeta);
+  color: var(--blanco);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.boton-oscuro {
+  background-color: var(--morado);
+  color: var(--blanco);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* ===== Secciones ===== */
+.seccion {
+  padding: 70px 0;
+}
+
+.fondo-lavanda {
+  background-color: var(--lavanda);
+}
+
+.fondo-oscuro {
+  background-color: var(--morado);
+  color: var(--blanco);
+}
+
+.fondo-violeta {
+  background-color: var(--violeta);
+  color: var(--blanco);
+}
+
+.imagen {
+  border-radius: 12px;
+}
+
+.seccion ul {
+  margin-left: 25px;
+}
+
+/* ===== Trabajos ===== */
+.tarjeta {
+  flex: 1;
+  min-width: 250px;
+  max-width: 340px;
+  background-color: var(--blanco);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.tarjeta img {
+  border-radius: 8px;
+}
+
+.tarjeta h3 {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.tarjeta p {
+  color: var(--violeta);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.fondo-lavanda .fila {
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* ===== Servicios ===== */
+.servicio {
+  flex: 1;
+  min-width: 200px;
+  border: 2px solid var(--violeta);
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.servicio h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.servicio p {
+  color: var(--lavanda);
+  margin-bottom: 0;
+}
+
+/* ===== Contacto ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+form button {
+  align-self: flex-start;
+}
+
+/* ===== Pie de página ===== */
+.pie {
+  background-color: var(--morado);
+  color: var(--blanco);
+  padding: 25px 0;
+}
+
+.pie p {
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: var(--lavanda);
+}
